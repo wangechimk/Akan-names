@@ -22,10 +22,27 @@ p{
 }
 label{
     font-size: 5 em;
-    color: rgb(255, 240, 31);
+    color: #000000;
 }
 form{
     width: 20%;
     text-align: center;
+}
 
+.form {
+    width: 60%;
+    background-color: #b8b8b8;
+    padding: 3%;
+    opacity: 0.8;
+    margin: auto;
+}
+
+.btn-outline-info {
+    color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+
+.btn-outline-warning {
+    color: #f04d0d;
+    border-color:#f04d0d;
 }

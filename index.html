@@ -17,48 +17,50 @@
   <div class="container">
     <div id="heading"></div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-12">
         <h1>Akan Names</h1>
         <p>The Akan Names come from the traditional Ghanian naming system where a childs' name is determined by the
           day,manner of birth and also gender.</p>
         <h2>What is your Ghanian akan name?</h2>
       </div>
 
-    </div>
-    <div class="col-md-6">
-      <h3>Fill in your birthday details here</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <div class="mb-3">
-        <label>Type your Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-      </div>
-      <div class="mb-3">
-        <label>Year of birth</label>
-        <input type="number" class="form-control" id="Year" placeholder="Enter the year" required>
-      </div>
-      <div class="mb-3">
-        <label>Month of birth </label>
-        <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1" max="12">
-      </div>
-      <div class="mb-3">
-        <label>Date of birth</label>
-        <input type="number" class="form-control" id="Date" placeholder="Enter the Date" required min="1" max="31">
-      </div>
-      <div class="form group">
-        <label>Gender :</label>
-        <input type="radio" name="gender" id="male" value="male" checked>Male
-        <input type="radio" name="gender" id="female" value="female" checked>Female
+      <div class="col-12">
+        <h3>Fill in your birthday details here</h3>
       </div>
     </div>
+
+    <div class="row mg">
+      <div class="col-12">
+        <div class="form">
+          <div class="mb-3">
+            <label>Type your Name</label>
+            <input type="text" oninput="fetchInputValue(event)" name="name" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label>Year of birth</label>
+            <input type="number" oninput="fetchInputValue(event)" name="year" class="form-control" id="Year" placeholder="Enter the year" required>
+          </div>
+          <div class="mb-3">
+            <label>Month of birth </label>
+            <input type="number" oninput="fetchInputValue(event)" name="month" class="form-control" id="month" placeholder="Enter the month" required min="1" max="12">
+          </div>
+          <div class="mb-3">
+            <label>Date of birth</label>
+            <input type="number" oninput="fetchInputValue(event)" name="dob" class="form-control" id="Date" placeholder="Enter the Date" required min="1" max="31">
+          </div>
+          <div class="mb-3">
+            <label>Gender :</label>
+            <input name="gender" onchange="fetchInputValue(event)" type="radio" name="gender" id="male" value="male" checked>Male
+            <input name="gender" onchange="fetchInputValue(event)" type="radio" name="gender" id="female" value="female" checked>Female
+          </div>
+          <a onclick="submitForm()" class="btn btn-outline-success btn-lg">submit</a>
+          <button type="reset" class="btn btn-outline-warning btn-lg">Reset</button>
+          <p id="output"></p>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  </div>
-  <a onclick="submission()" class="btn btn-outline-info btn-lg">submit</a>
-  <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
 </body>
-<script src="script.js"></script>
+<script src="./javascript/script.js"></script>
 
 </html>
