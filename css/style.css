@@ -1,0 +1,31 @@
+body{
+    background-image: url("img/ghana1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1{
+    font-family: cursive;
+    text-align: center;
+    font-size: 4em ;
+    color: darkorange;
+}
+h2{
+   color: darksalmon;
+}
+  h3{
+   color: darkseagreen;
+  }
+p{
+    font: 2em sans-serif;
+    color: tomato;
+}
+label{
+    font-size: 5 em;
+    color: rgb(255, 240, 31);
+}
+form{
+    width: 20%;
+    text-align: center;
+
+}

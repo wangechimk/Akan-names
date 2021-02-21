@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--link to bootsrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Akan Name</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="heading"></div>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Akan Names</h1>
+        <p>The Akan Names come from the traditional Ghanian naming system where a childs' name is determined by the
+          day,manner of birth and also gender.</p>
+        <h2>What is your Ghanian akan name?</h2>
+      </div>
+
+    </div>
+    <div class="col-md-6">
+      <h3>Fill in your birthday details here</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="mb-3">
+        <label>Type your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="mb-3">
+        <label>Year of birth</label>
+        <input type="number" class="form-control" id="Year" placeholder="Enter the year" required>
+      </div>
+      <div class="mb-3">
+        <label>Month of birth </label>
+        <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1" max="12">
+      </div>
+      <div class="mb-3">
+        <label>Date of birth</label>
+        <input type="number" class="form-control" id="Date" placeholder="Enter the Date" required min="1" max="31">
+      </div>
+      <div class="form group">
+        <label>Gender :</label>
+        <input type="radio" name="gender" id="male" value="male" checked>Male
+        <input type="radio" name="gender" id="female" value="female" checked>Female
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <a onclick="submission()" class="btn btn-outline-info btn-lg">submit</a>
+  <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
+</body>
+
+</html>
